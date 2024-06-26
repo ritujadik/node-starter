@@ -52,7 +52,7 @@ pipeline {
         failure {
             mail to: 'robinhooda66@gmail.com',
                  subject: "Build Failure: ${env.JOB_NAME} ${env.BUILD_NUMBER}",
-                 body: "The build ${env.JOB_NAME} ${env.BUILD_NUMBER} failed."
+                 body: "The build ${env.JOB_NAME} ${env.BUILD_NUMBER} failed file."
         }
     }
 }
